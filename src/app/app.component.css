@@ -1,0 +1,108 @@
+.dashboard {
+    font-family: 'CiscoSans';
+    padding: 20px;
+    background-color: #0C1E2E;
+    color: #E6F3FF;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  h1, h2, h3, h4 {
+    margin: 0;
+    padding: 5px 0;
+    font-family: 'CiscoSans'; 
+  }
+  h1 {
+    text-align: center;
+    color: #4A90E2;
+    margin-bottom: 20px;
+  }
+  .metrics {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  .metric {
+    background-color: #1A3A5A;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    width: 200px;
+    font-family: 'CiscoSans';
+    text-align: center
+  }
+  .metric-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: 'CiscoSans';
+  }
+  .large {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  .success { color: #4CAF50; }
+  .accent { color: #FF9800; }
+  .chart {
+    display: grid;
+    flex-grow: 1;
+    margin: 0 20px;
+    background-color: #1A3A5A;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    font-family: 'CiscoSans';
+  }
+  .average-time {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    font-family: 'CiscoSans'; 
+  }
+  .partners {
+    background-color: #1A3A5A;
+    padding: 15px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    flex-grow: 1;
+    margin: 0 20px;
+  }
+  .partner-navigation {
+    display: flex;
+    align-items: center;
+  }
+  .partner-times {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+    margin: 0 10px;
+  }
+  .partner-times > div {
+    text-align: center;
+    flex: 1;
+  }
+  .time {
+    font-weight: bold;
+  }
+  button {
+    background-color: #4A90E2;
+    color: #E6F3FF;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  button:disabled {
+    background-color: #2A5A8A;
+    cursor: not-allowed;
+  }
+  :host ::ng-deep .ag-theme-alpine-dark {
+    --ag-background-color: #1A3A5A;
+    --ag-header-background-color: #2A5A8A;
+    --ag-odd-row-background-color: #1A3A5A;
+    --ag-header-foreground-color: #E6F3FF;
+    --ag-foreground-color: #E6F3FF;
+    --ag-row-hover-color: #2A5A8A;
+  }
